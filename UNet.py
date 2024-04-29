@@ -6,13 +6,13 @@ from monai.networks.layers import Norm
 def create_2d_unet():
     model=UNet(
         spatial_dims=2,
-        in_channels=1,
-        out_channels=1,
-        channels=(16,32,64,128,256),
+        in_channels=2,
+        out_channels=2,
+        channels=(2,4,8,16,32), #la til to lag
         strides=(2,2,2,2),
-        num_res_units=2,
-        norm=Norm.BATCH,
-        dropout=0.1
+        num_res_units=4,
+        norm=Norm.INSTANCE,
+        dropout=0.01
     )
 
     return model

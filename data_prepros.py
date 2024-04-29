@@ -42,7 +42,7 @@ def process_all_files(base_path):
                 #print(f"Processed {image_path} and {mask_path}: added {len(selected_image_slices)} slices.")
 
     train_val_data, test_data, train_val_labels, test_labels = train_test_split(
-        data, labels, test_size=0.2, random_state=42, stratify=labels)
+        data, labels, test_size=0.2, random_state=42, stratify=labels) #########prøve å endre 42
     train_data, val_data, train_labels, val_labels = train_test_split(
         train_val_data, train_val_labels, test_size=0.25, random_state=42, stratify=train_val_labels)
 
