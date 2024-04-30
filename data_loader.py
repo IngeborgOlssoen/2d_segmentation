@@ -4,8 +4,8 @@ from monai.transforms import MapTransform
 from monai.transforms import(
     Compose,
     ScaleIntensityRanged,
-    RandRotate90d,
-    RandFlipd,
+    # RandRotate90d,
+    # RandFlipd,
     ToTensord,
     RandAffine,
     RandGaussianNoise,

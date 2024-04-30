@@ -26,7 +26,7 @@ max_lr = 1e-3   # Set this to an upper bound of learning rate
 #scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=3, verbose=True)
 
 # Early stopping parameters
-patience = 20
+patience = 50
 best_val_loss = float('inf')
 counter = 0
 
@@ -36,7 +36,7 @@ val_losses = []
 
 
 # Training loop
-num_epochs = 20
+num_epochs = 50
 scheduler = CosineAnnealingLR(optimizer=optimizer,T_max=num_epochs,eta_min=1e-6)
 
 

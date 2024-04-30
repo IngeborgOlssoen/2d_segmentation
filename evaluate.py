@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from monai.networks.nets import UNet
 from monai.metrics import DiceMetric, HausdorffDistanceMetric
 from monai.transforms import EnsureType
-from data_loader import val_loader  # make sure your validation loader is suitable for PyTorch
+from data_loader import  val_loader # make sure your validation loader is suitable for PyTorch
 from UNet import unet_model
 
 # Check if CUDA is available, otherwise use CPU
