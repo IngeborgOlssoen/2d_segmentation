@@ -1,10 +1,10 @@
 
-# 2D_segmentering av CTCA bilder. 
+# 3D-segmentering av CTCA-bilder.
 
 
 ## Beskrivelse
 
-Vårt prosjekt var å utvikle en modell for presis 3D-segmentering av CTCA-bilder. Denne modellen bruker 2D UNet fra Monai til å segmentere og predikere hvor sykdommen er lokalisert på bilet. 
+Vårt prosjekt var å utvikle en modell for presis 3D-segmentering av CTCA-bilder. I denne modellen valgte vi å slice 3D bildene, og formatere dem til 2D. Videre brukte vi Monai 2D UNet til å predikere maskene. 
 
 ## Funksjoner 
 - **Datainnlasting**: Støtter import av data fra nrrd-filer
