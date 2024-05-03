@@ -39,8 +39,8 @@ loss_function = DiceCELoss(to_onehot_y=False, softmax=False).to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4, weight_decay=0.1) #0.001 orginalt
 
 num_epochs = 200
-patience = 10  # Number of epochs to wait after last improvement
-early_stopping_counter = 0  # Counter for early stopping
+patience = 10  
+early_stopping_counter = 0  
 
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=num_epochs)
 

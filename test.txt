@@ -1,8 +1,0 @@
-while sleep 1; do nvidia-smi --query-gpu=timestamp,power.draw --format=csv >> gpu_power_usage.log; done &
-
-
-to stop:
-ps aux | grep nvidia-smi
---> kill [process_id]
-
-ID= [1]603545

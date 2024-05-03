@@ -17,7 +17,7 @@ Før du installerer, sørg for at du har python 3.6+ og pip installert på maski
 For å kunne kjøre koden må man installere pakkene som ligger i requirements.txt. 
 
 ## Når du kjører
-Kjør først data_prepros.py, deretter data_loader og til slutt, evaluering. 
+Kjør først data_prepros, deretter data_loader, så train og til slutt, evaluering. 
 
 ```bash
 ssh user@clab[1-26].idi.ntnu.no
@@ -25,6 +25,7 @@ pip install -r requirements.txt
 
 python /work/user/2d_segmentation/data_prepros.py
 python /work/user/2d_segmentation/data_loader.py
+python /work/user/2d_segmentation/train.py
 python /work/user/2d_segmentation/evaluate.py
 
 
